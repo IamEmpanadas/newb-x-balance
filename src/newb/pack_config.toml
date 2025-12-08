@@ -1,18 +1,24 @@
-name = "Newb X Legacy"
-version = [0, 16, 0]
+name = "§d§oNewb x Balance"
+version = [0, 1, 0]
 min_supported_mc_version = [1, 21, 111]
-description = '''
-§c%w
-§7- An enchanced vanilla shader for Minecraft!
-%v
-§3https://devendrn.github.io/newb-shader/
-''' # %w = patch warning, %v = version
-authors = ["devendrn"]
-url = "https://devendrn.github.io/newb-shader/"
-uuid = "95f774cf-4afa-73e7-a21a-72146307b1d2" # Use https://www.uuidgenerator.net/version4
-materials = ["Sky", "RenderChunk", "Actor", "ActorGlint", "EndSky", "Clouds", "SunMoon", "Weather", "ItemInHandTextured", "ItemInHandColor", "ItemInHandColorGlint", "Stars"]
 
-[info] 
+description = '''
+§fYou need to use §l MB loader.
+§3https://devendrn.github.io/newb-shader/
+'''
+
+authors = ["Empanadas"]
+url = "https://devendrn.github.io/newb-shader/"
+uuid = "6252c90d-3d50-48bf-bb4c-8e8a60acf4fb"
+
+materials = [
+  "Sky", "RenderChunk", "Actor", "ActorGlint", "EndSky",
+  "Clouds", "SunMoon", "Weather",
+  "ItemInHandTextured", "ItemInHandColor", "ItemInHandColorGlint",
+  "Stars"
+]
+
+[info]
 copyright = '''
 Copyright © 2025 %a, and "Newb Shader" Contributors
 
@@ -21,65 +27,93 @@ This compiled "Newb Shader" resource pack (source code: https://github.com/deven
 You can compile the shader from source and distribute the result under your own terms (compatible with the MIT License).
 
 Contact (Discord Server): https://discord.gg/newb-community-844591537430069279
-''' # %a = authors
+'''
+
 credits = '''
 '''
 
-# subpacks are arranged in left to right order
-# right-most subpack is enabled by default
+# ==============================================================================
+# SUBPACKS
+# ==============================================================================
 
 [[subpack]]
-define = "ROUNDED_CLOUDS"
-materials = ["Clouds"]
+define = "LOW_MODE"
+materials = [
+  "Sky",
+  "RenderChunk",
+  "Actor",
+  "ActorGlint",
+  "EndSky",
+  "SunMoon",
+  "Weather",
+  "Clouds",
+  "ItemInHandTextured",
+  "ItemInHandColor",
+  "ItemInHandColorGlint",
+  "Stars"
+]
 description = '''
-Rounded Clouds
+§eLow Mode - Vanilla Fancy Clouds
+§7(ES) Efectos reducidos, pero visuales decentes para dispositivos débiles.  
+§7(EN) Reduced effects but still decent visuals for weak devices.
 '''
 
 [[subpack]]
-define = "BOX_CLOUDS"
-materials = ["Clouds", "RenderChunk"]
+define = "LOW_MODE_SOFT_CLOUDS"
+materials = [
+  "Sky", 
+  "RenderChunk", 
+  "Actor", 
+  "ActorGlint", 
+  "EndSky",
+  "Clouds", 
+  "SunMoon", 
+  "Weather",
+  "ItemInHandTextured", 
+  "ItemInHandColor", 
+  "ItemInHandColorGlint",
+  "Stars"
+]
 description = '''
-Box Clouds
+§eLow Mode - Soft Clouds
 '''
 
 [[subpack]]
-define = "CHUNK_ANIM"
-materials = ["RenderChunk"]
+define = "MEDIUM_MODE"
+materials = [
+  "Sky",
+  "RenderChunk",
+  "Clouds", 
+  "Weather",
+  "Stars"
+]
 description = '''
-Chunk loading animation
+§aMedium Mode
+§7(ES) Equilibrado: buena calidad sin destruir el rendimiento.  
+§7(EN) Balanced: good quality without killing performance.
 '''
 
 [[subpack]]
-define = "NO_WAVE_NO_FOG"
-materials = ["RenderChunk"]
+define = "HIGH_MODE_REDOUNDED_CLOUDS"
+materials = [
+  "Sky", 
+  "RenderChunk",
+]
 description = '''
-No fog and wave effects
+§bHigh Mode — Redounded Clouds
+§7(ES) Gráficos mejorados con nubes suaves y estilizadas. Ideal si quieres calidad sin volverte loco con el realismo.  
+§7(EN) Enhanced graphics with smooth, stylized clouds. Perfect if you want quality without extreme realism.
 '''
 
 [[subpack]]
-define = "NO_FOG"
-materials = ["RenderChunk"]
+define = "HIGH_MODE_REALISTIC_CLOUDS"
+materials = [
+  "Sky", 
+  "RenderChunk",
+  "Clouds"
+]
 description = '''
-No fog effect
-'''
-
-[[subpack]]
-define = "NO_WAVE"
-materials = ["RenderChunk"]
-description = '''
-No wave effects
-'''
-
-#[[subpack]]
-#define = "LITE"
-#materials = ["Sky", "RenderChunk", "Actor", "ActorGlint", "EndSky", "Clouds", "SunMoon", "Weather", "ItemInHandTextured", "ItemInHandColor", "ItemInHandColorGlint", "Stars"]
-#description = '''
-#Many effects disabled. A bit lighter!
-#'''
-
-[[subpack]]
-define = "DEFAULT"
-materials = []
-description = '''
-Default
+§bHigh Mode — Realistic Clouds
+§7(ES) Gráficos mejorados con nubes realistas y detalladas. La experiencia más inmersiva del paquete.  
+§7(EN) Enhanced graphics with realistic, detailed clouds. The most immersive experience.
 '''
