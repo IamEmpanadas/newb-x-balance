@@ -3,11 +3,11 @@ version = [0, 1, 0]
 min_supported_mc_version = [1, 21, 111]
 
 description = '''
-§fYou need to use §l MB loader.
+§fBy Empanadas 
 §3https://devendrn.github.io/newb-shader/
 '''
 
-authors = ["Empanadas"]
+authors = ["Empanadas","devendrn"]
 url = "https://devendrn.github.io/newb-shader/"
 uuid = "6252c90d-3d50-48bf-bb4c-8e8a60acf4fb"
 
@@ -37,7 +37,7 @@ credits = '''
 # ==============================================================================
 
 [[subpack]]
-define = "LOW_MODE"
+define = "LOW"
 materials = [
   "Sky",
   "RenderChunk",
@@ -59,57 +59,19 @@ description = '''
 '''
 
 [[subpack]]
-define = "LOW_MODE_SOFT_CLOUDS"
+define = "ROUNDED_CLOUDS"
 materials = [
   "Sky", 
-  "RenderChunk", 
-  "Actor", 
-  "ActorGlint", 
-  "EndSky",
-  "Clouds", 
-  "SunMoon", 
-  "Weather",
-  "ItemInHandTextured", 
-  "ItemInHandColor", 
-  "ItemInHandColorGlint",
-  "Stars"
 ]
 description = '''
-§eLow Mode - Soft Clouds
-'''
-
-[[subpack]]
-define = "MEDIUM_MODE"
-materials = [
-  "Sky",
-  "RenderChunk",
-  "Clouds", 
-  "Weather",
-  "Stars"
-]
-description = '''
-§aMedium Mode
-§7(ES) Equilibrado: buena calidad sin destruir el rendimiento.  
-§7(EN) Balanced: good quality without killing performance.
-'''
-
-[[subpack]]
-define = "HIGH_MODE_REDOUNDED_CLOUDS"
-materials = [
-  "Sky", 
-  "RenderChunk",
-]
-description = '''
-§bHigh Mode — Redounded Clouds
+§bHigh Mode — Rounded Clouds
 §7(ES) Gráficos mejorados con nubes suaves y estilizadas. Ideal si quieres calidad sin volverte loco con el realismo.  
 §7(EN) Enhanced graphics with smooth, stylized clouds. Perfect if you want quality without extreme realism.
 '''
 
 [[subpack]]
-define = "HIGH_MODE_REALISTIC_CLOUDS"
-materials = [
-  "Sky", 
-  "RenderChunk",
+define = "REALISTIC_CLOUDS"
+materials = [,
   "Clouds"
 ]
 description = '''
